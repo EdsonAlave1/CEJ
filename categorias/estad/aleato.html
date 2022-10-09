@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo.jpg ">
+    <link rel="stylesheet" href="../../css/contenidos.css">
+    <link rel="stylesheet" href="../../css/css2.0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e6bc2520f1.js" crossorigin="anonymous"></script>
+    <title>CEJ-FINESI</title>
+</head>
+<body>
+  <!--header-->
+    <header>
+      <div class="encabezado">
+        <div class="contacto">
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Llámanos :</a></li>
+                    <li class="en"><a href="#">+51987563251</a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                  <li><a>Contáctanos :</a></li>
+                  <li class="ecom"><a href="#">ellanotequiere@hotmail.com </a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Encuéntranos :</a></li>
+                   <li class="ef"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="ei"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="et"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="ey"> <a href="#" class="fa fa-youtube"></a></li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+    </header>
+  <!--menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6610f2;">
+    <div class="container-fluid">
+       <a href="../../index.html" class="logo_inicial"><img src="../../img/logo.jpg" alt="logo" class="navbar-brand" width="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../sobre.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../infor.html">Cursos de informatica</a></li>
+              <li><a class="dropdown-item" href="../estad.html">Cursos de estadistica</a></li>
+              <li><a class="dropdown-item" href="../compl.html">Cursos complementarios</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!--contenido-->
+    <div class="container">
+      <div class="indice">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a>></a></li>
+          <li><a href="../estad.html">Estadistica </a></li>
+          <li><a>></a></li>
+          <li><a href="/categorias/estad/aleato.html">V.aleatoria</a></li>
+      </ul>
+      </div>
+      <div class="section">
+        <div class="col span_2_of_3">
+          <div class="blog-post">
+            <h1 class="blog-title">Introducción a las variables aleatorias</h1>
+            <h2 class="date"> Introducción</h2>
+            <img src="https://img.youtube.com/vi/qmBk_GwxAmU/maxresdefault.jpg" alt="blog">
+            <p class="blog-content" id="contenido1">En el tema anterior utilizamos la denominación de experimento aleatorio para nombrar
+              a aquellos experimentos en los que no se obtiene siempre el mismo resultado de la variable de
+              interés. Al definir un experimento hay que fijar sus condiciones de experimentación, de forma
+              que si obtenemos un nuevo dato manteniendo constantes dichas condiciones, estaremos repitiendo
+              el mismo experimento. Cuando las condiciones de experimentación no engloban a todos los factores
+              que influyen en la variable de interés, las repeticiones del experimento podrán dar lugar a valores
+              diferentes. Esta posible variabilidad en el resultado es debida a la influencia de esos factores que no
+              mantenemos constantes. Por contra, el resultado de un experimento determinista es una constante,
+              y por tanto perfectamente predecible.
+              Llamaremos variable aleatoria al resultado de un experimento aleatorio. Por ejemplo,
+              el resultado de lanzar un dado es una variable aleatoria, o el resultado de medir el tiempo que
+              un ordenador tarda en acceder a una red, etc. Según esta definición, una variable aleatoria no
+              tendrá, en general, siempre el mismo valor. Depende de cómo influya el azar en cada una de las
+              repeticiones del experimento. Para que una variable aleatoria esté bien definida, necesitamos
+              conocer dos elementos fundamentales</p>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Variables aleatorias univariantes discretas</h1>
+            <h2 class="date"></h2>
+            <img src="https://tablademultiplicar.b-cdn.net/wp-content/uploads/2020/04/variables-aleatorias-1024x768.jpg" alt="blog">
+            <p class="blog-content" id="contenido2">Son las variables aleatorias que toma valores (cuantitativos) discretos. Ejemplos: resultado de
+              lanzar un dado o una moneda, número de defectos que tiene cada artículo manufacturado por
+              la máquina M. Número de clientes que llegan a cierto puesto de servicio por unidad de tiempo,
+              número de desconexiones de una red por unidad de tiempo, número de peticiones de acceso a un
+              servidor por unidad de tiempo, etc.
+              Para construir un modelo de probabilidad que asigne probabilidades a los diferentes sucesos
+              en una variable aleatoria discreta se usan las llamadas función de probabilidad y función de
+              distribución, que definimos a continuación</p>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Variables aleatorias univariantes continuas</h1>
+            <!-- <h2 class="date">Publicado hoy</h2> -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3M_oLFw6K7pYT00Mw8e13k7AEsifUTu-ig&usqp=CAU" alt="blog">
+            <p class="blog-content" id="contenido3">En las variables aleatorias continuas, ya no se tienen un número finito de valores, sino infinito.
+              Por tanto no tiene sentido hablar de la probabilidad de obtener un valor concreto, pues ésta será
+              siempre cero. Por ejemplo, si consideramos el experimento de seleccionar al azar un número real
+              comprendido en el intervalo [3,4], ¿cuál es la probabilidad de elegir el número π (3.1416...). Al
+              haber infinitos valores todos con las mismas posibilidades de ser seleccionados, tendremos que
+              P(3,1416...)=1/∞ = 0. Y similar resultado se obtiene para cualquier variable continua.
+              Por tanto, no tiene sentido definir una variable aleatoria continua utilizando la función de
+              probabilidad. Con variables continuas, hablaremos de probabilidades de obtener valores en cierto
+              intervalo. Por ejemplo, la probabilidad de tardar más de 10 minutos en realizar una tarea, o la
+              probabilidad de que una pieza manufacturada tenga una longitud comprendida entre 7.5 y 7.8
+              centímetros. Para calcular probabilidades con una variable aleatoria continua usaremos la llamada
+              función de densidad así como la función de distribución</p>
+          </div>
+        </div>
+
+
+        <div class="post-list">
+          <div class="content">
+              <!-- go! -->
+            <!-- contenido multimedia -->
+        <div class="modal fade " id="exampleModalScrollable1" tabindex="-4" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle"><stron>UNIDAD CENTRAL DE PROCESO</stron></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="../estad/guias/Apuntes_VAleatorias.pdf" width="760" height="500" allow="autoplay"></iframe>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+          </div>
+          </div>
+          </div>
+  
+      <article class="post">
+          <div class="post-header">
+              <div class="post-img-1"></div>
+          </div>
+           <div class="post-body">
+              <!-- <span>5 septiembre,2022|Diseño web</span> -->
+              <h2>GUIAS</h2>
+              
+              <p class="descripcion">teoria y ejercicios de apoyo para el desarrollo del curso y su complementacion</p>    
+           </div>
+           
+           
+           <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable1">VER
+              </button>
+      </article>
+
+            <!-- end -->
+             <!-- contenido multimedia -->
+    <div class="modal fade " id="exampleModalvideos" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalScrollableTitle">VIDEOS</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <!-- 760-----500 -->
+        <iframe width="760" height="500" src="https://www.youtube.com/embed/_wonmKS4Blk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+  <article class="post">
+      <div class="post-header">
+          <div class="post-img-2"></div>
+      </div>
+       <div class="post-body">
+          <!-- <span>5 septiembre,2022|Diseño web</span> -->
+          <h2>VIDEOS</h2>
+          <p class="descripcion" id="multimedia">cursos en formato de video para el reforzamiento al desarrollo del curso</p>  
+       </div>
+       <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalvideos">VER</button>
+  </article>
+  <!-- end -->
+               <!-- contenido multimedia -->
+               <div class="modal fade " id="exampleModallibro" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">VIDEOS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                   
+                  <ul>principios de probabilidad - Peyton Z.</ul>
+                  <ul>calculo d probabilidades - José Javier</ul>
+                  <ul>Probabilidad y Estadistica -Jay L. Devo</ul>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-img-3"></div>
+                </div>
+                 <div class="post-body">
+                    <!-- <span>5 septiembre,2022|Diseño web</span> -->
+                    <h2>BIBLIOGRAFIA</h2>
+                    <p class="descripcion" id="multimedia">libros para ayudar a saber más sobre el tema y complementar el aprendizaje</p>  
+                 </div>
+                 <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModallibro">VER</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    <!--contenido derecho-->
+      <aside class="col-span_1_of_3">
+        <div class="side-post">
+          <h3>BUSCANOS</h3>
+          <div class="iconos">
+            <ul>
+                <li class="sf">
+                  <a href="#" class="fa fa-facebook">
+                              </a>
+                </li>
+                <li class="stw">
+                  <a href="#" class="fa fa-twitter">
+                              </a>
+                </li>
+                <li class="sy">
+                  <a href="#"class="fa fa-linkedin">
+                  </a>
+                </li>
+                <li class="sw">
+                  <a href="#"class="fa fa-whatsapp">
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="lista">
+            <br>
+            <p>Categorías</p>		
+            <ul>
+              <li><a href="#contenido1">Tema 1</a>
+              </li>
+              <li><a href="#contenido2">Tema 2</a>
+              </li>
+              <li><a href="#contenido3">Tema 3</a>
+              </li>
+              <li><a href="#multimedia">Multimedia</a>
+              </li>
+              <li class="space">space</li>
+              <li class="space"> space</li>
+            </ul>    
+        </div>
+      </aside>
+    </div>
+  <!--pie de pagina-->
+    <footer class="pie_pagina">
+        <div class="grupo1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/305913447_1262687094484677_3040201740093793565_n.jpg?ccb=11-4&oh=01_AVy-Yld2KK3ichhzmrcZ9VDiJ8BZN3lhE9kz9V4uHCyESg&oe=63521281" alt="sexto semestre completo ">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2> SOBRE NOSOTROS</h2>
+            <p>Somos parte de la facultad de Ingeniera Estadistica e informatica del sexto semestre</p>
+          </div>
+          <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redes">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo2">
+          <small>&copy;2022 <b>Jeobardo Jerif Cornejo Cuno,Edson David Mamani Alave,Caren Lizbeth Quisa Mamani </b> -Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+<script src="../jv/bootstrap.bundle.min.js"></script>
+<script src="../jv/main.js"></script>
+
+</body>
+</html>

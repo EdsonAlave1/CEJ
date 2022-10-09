@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="../css/contenidos.css ">
+    <link rel="stylesheet" href="../css/css2.0.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <script type="text/javascript">
+        (function(document) {
+          'use strict';
+    
+          var LightTableFilter = (function(Arr) {
+    
+            var _input;
+    
+            function _onInputEvent(e) {
+              _input = e.target;
+              var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+              Arr.forEach.call(tables, function(table) {
+                Arr.forEach.call(table.tBodies, function(tbody) {
+                  Arr.forEach.call(tbody.rows, _filter);
+                });
+              });
+            }
+    
+            function _filter(row) {
+              var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+              row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+    
+            return {
+              init: function() {
+                var inputs = document.getElementsByClassName('light-table-filter');
+                Arr.forEach.call(inputs, function(input) {
+                  input.oninput = _onInputEvent;
+                });
+              }
+            };
+          })(Array.prototype);
+    
+          document.addEventListener('readystatechange', function() {
+            if (document.readyState === 'complete') {
+              LightTableFilter.init();
+            }
+          });
+    
+        })(document);
+        </script>
+      <title>CEJ-FINESI</title>
+  </head>
+  <body>
+    <header>
+      <div class="encabezado">
+        <div class="contacto">
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Llámanos :</a></li>
+                    <li class="en"><a href="#">+51987563251</a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                  <li><a>Contáctanos :</a></li>
+                  <li class="ecom"><a href="#">ellanotequiere@hotmail.com </a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Encuéntranos :</a></li>
+                   <li class="ef"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="ei"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="et"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="ey"> <a href="#" class="fa fa-youtube"></a></li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+    </header>
+  <!--menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6610f2;">
+    <div class="container-fluid">
+       <a href="../index.html" class="logo_inicial"><img src="../img/logo.jpg" alt="logo" class="navbar-brand" width="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../CEJ/sobre.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../categorias/infor.html">Cursos de informatica</a></li>
+              <li><a class="dropdown-item" href="../categorias/estad.html">Cursos de estadistica</a></li>
+              <li><a class="dropdown-item" href="../categorias/compl.html">Cursos complementarios</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 light-table-filter" data-table="order-table" type="text" placeholder="Buscar">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- manu -->
+  <BR> 
+    <h1 class="titulo-est"> CURSOS COMPLEMENTARIOS</h1>
+    <table class="table table-bordered order-table table-striped " id="listaArticulos">
+      <thead class="tble-dark" style="background-color:#6610f280;">
+        <tr>
+          <tr>
+            <th scope="col-light">#</th>
+            <th scope="col"></th>
+            <th scope="col">TITULO</th>
+            <th scope="col">CONTENIDO</th>
+          </tr>
+      </thead>
+      <tbody class="cursos-list">
+        <tr class="articulo" >
+          <th scope="row" class="table_1">1</th>
+          <td class="table_"><img src="https://live.staticflickr.com/65535/48367281281_392481f7da_b.jpg" class="img_curs"></td>
+          <td class="cur"><a href="compl/matriz.html">Algebra de Matrices</a></td>
+          <td class="cur1">
+            <ul>tipos de matrices</ul>
+            <ul>determinantes y propiedades</ul>
+            <ul>operaciones matriciales</ul>
+            <ul>Inversa de una matriz</ul>
+            <ul>Sistema de ecuaciones</ul>
+        </tr>
+        <tr class="articulo">
+          <th scope="row" class="table_1">2</th>
+          <td class="table_"><img src="https://i.ytimg.com/vi/WA_A1IjmocQ/maxresdefault.jpg" class="img_curs"></td>
+          <td class="cur" ><a href="compl/calcint.html">Calculo Integral</a></td>
+          <td class="cur1">
+            <ol>Diferencial de una Función</ol>
+            <ol>Integral Indefinida</ol>
+            <ol>Métodos de Integración: Cambio de Variable</ol>
+        </tr>
+        <tr class="articulo">
+          <th scope="row" class="table_1">3</th>
+          <td class="table_"><img src="https://prod-discovery.edx-cdn.org/media/course/image/4502ab02-2a8c-4741-b752-b4d1798014e6-1e46981ad171.small.jpg" class="img_curs"></td>
+          <td class="cur"><a href="compl/calc.html">Calculo Diferencial</a></td>
+          <td class="cur1">
+            <ul>limites y continuidad</ul>
+            <ul>derivadas</ul>
+            <ul>aplicacion de las derivadas</ul>
+        </tr>
+        <tr class="articulo">
+          <th scope="row" class="table_1">4</th>
+          <td class="table_"><img src="https://i.ytimg.com/vi/8jX7bzx-PK0/hqdefault.jpg" class="img_curs"></td>
+          <td class="cur"><a href="compl/geome.html">Geometria Analitica</a></td>
+          <td class="cur1">
+            <ul>Plano cartesiano</ul>
+            <ul>Rectas</ul>
+            <ul>Conicas</ul>
+            <ul>Transformaciones de coordenadas</ul>
+        </tr>
+      </tbody>
+    </table>
+    <script src="https://kit.fontawesome.com/e6bc2520f1.js" crossorigin="anonymous"></script>
+    <script src="../jv/bootstrap.bundle.min.js"></script>
+    <script src="../jv/main.js"></script>
+</body>
+</html>

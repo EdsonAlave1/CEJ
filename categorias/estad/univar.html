@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo.jpg ">
+    <link rel="stylesheet" href="../../css/contenidos.css">
+    <link rel="stylesheet" href="../../css/css2.0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    
+    <script src="https://kit.fontawesome.com/e6bc2520f1.js" crossorigin="anonymous"></script>
+    <title>DCEJ-FINESI</title>
+</head>
+<body>
+  <!--header-->
+    <header>
+      <div class="encabezado">
+        <div class="contacto">
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Llámanos :</a></li>
+                    <li class="en"><a href="#">+51987563251</a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                  <li><a>Contáctanos :</a></li>
+                  <li class="ecom"><a href="#">ellanotequiere@hotmail.com </a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Encuéntranos :</a></li>
+                   <li class="ef"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="ei"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="et"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="ey"> <a href="#" class="fa fa-youtube"></a></li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+    </header>
+  <!--menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6610f2;">
+    <div class="container-fluid">
+       <a href="../../index.html" class="logo_inicial"><img src="../../img/logo.jpg" alt="logo" class="navbar-brand" width="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../sobre.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../infor.html">Cursos de informatica</a></li>
+              <li><a class="dropdown-item" href="../estad.html">Cursos de estadistica</a></li>
+              <li><a class="dropdown-item" href="../compl.html">Cursos complementarios</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!--contenido-->
+    <div class="container">
+      <div class="indice">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a>></a></li>
+          <li><a href="../estad.html">Estadistica </a></li>
+          <li><a>></a></li>
+          <li><a href="../estad/univar.html">model.prob.univ</a></li>  
+          <!--  -->
+      </ul>
+      </div>
+      <div class="section">
+        <div class="col span_2_of_3">
+          <div class="blog-post">
+            <h1 class="blog-title">MODELOS DE PROBABILIDAD UNIVARIANTES</h1>
+            <h2 class="date"> Introducción<br></h2>
+            <img src="https://i.ytimg.com/vi/RTFo58JxgeE/mqdefault.jpg" alt="blog">
+            <p class="blog-content" id="contenido1"><br>En este tema introduciremos algunos modelos de probabilidad de variables aleatorias que serán
+                de gran utilidad en la práctica. El objetivo es suministrar una especie de catálogo al que acudir para
+                asignar un modelo de probabilidad para describir el comportamiento de una variable real (función
+                de probabilidad para variables aleatorias discretas o función de densidad para las continuas). En
+                la práctica, será muy difícil construir un modelo de probabilidad a la medida de un problema
+                concreto, con lo que la opción más realista será la selección de uno de los modelos ya existentes en
+                la literatura. Un modelo será de utilidad si supone una buena aproximación del comportamiento de
+                una variable aleatoria real. En temas posteriores aprenderemos a valorar si el modelo seleccionado
+                es adecuado para explicar nuestros datos.<br><br>
+                En el tema anterior ya se mencionaron dos variables aleatorias con las que abrir este catálogo.
+                La variable aleatoria uniforme discreta y la variable aleatoria uniforme continua. Usualmente
+                se emplean indistintamente el término ’variable aleatoria’ y el término ’distribución’. Por ejemplo
+                se puede decir que el resultado de cierto experimento es una variable aleatoria uniforme o que es
+                una variable de distribución uniforme.</p><br>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Variables aleatorias asociadas al proceso de Bernoulli</h1>
+            <h2 class="date"></h2>
+            <img src="https://cdn.exceltotal.com/wp-content/uploads/2013/08/como-hacer-una-campana-de-gauss-en-excel-01.png" alt="blog">
+            <p class="blog-content" id="contenido2"><br><br>Supongamos, por ejemplo, un proceso productivo que en condiciones normales de funcionamiento produce artículos con un porcentaje de defectuosos p. Supongamos que el proceso es estable (elporcentaje de artículos defectuosos no aumenta ni disminuye a lo largo del tiempo; lo que ocurriría,
+                por ejemplo, si la maquinaria se fuese deteriorando o el proceso productivo fuese mejorando por
+                cambios tecnológicos). Supongamos asímismo que la aparición de un artículo defectuoso es impredecible, y por tanto independiente de la producción anterior. Si asignamos a cada artículo con una
+                variable de Bernoulli Xi que toma el valor 1 si el artículo i-ésimo es defectuoso y 0 en caso contrario tendremos que la sucesión X1, X2, ..., Xi, ..., será, como ya se ha mencionado anteriormente,
+                un proceso de Bernoulli.<br>
+                Supongamos ahora que extraemos n artículos de la producción. Queremos saber cuántos artículos defectuosos tendremos en esos n artículos seleccionados. A priori, no sabremos cuántos artículos
+                serán defectuosos hasta que no les hagamos las pruebas pertinentes. Aunque el proceso produzca
+                una proporción de defectuosos p, en una muestra concreta puede haber más o menos artículos
+                defectuosos de dicha proporción, dependiendo del azar en la selección de los n artículos.<br><br>
+            
+                De esta forma se concluye que encontrar 5 ó más artículos defectuosos en una muestra de tamaño
+                200 es un suceso muy improbable si de verdad tuviésemos que p = 0,005. Es un resultado preocupante. No es un suceso imposible, pues la operación anterior dice que, si p = 0,005 en 4 de cada
+                1000 muestras habrá 5 ó más artícuos defectuosos. Pero la prudencia nos debe llevar a reaccionar
+                al observar un suceso tan poco probable. Por tanto, lo más conveniente sería dar la alarma en la
+                línea de producción, pues es muy posible que se haya producido un desajuste en la máquina que
+                haya provocado que p > 0,005.<br>
+                A partir de un modelo de probabilidad podemos entonces atribuir probabilidades a los distintos
+                sucesos. Esa asignación de probabilidades sigue un razonamiento puramente deductivo (¿por qué?).
+                Si los datos finalmente observados resultan ser un suceso que, de acuerdo a dicho modelo, tiene muy
+                poca probabilidad de haberse observado, lo más sensato será pensar que el modelo ha dejado de ser
+                válido (razonamiento inductivo). En este ejercicio de comparar lo observado con la probabilidad
+                de haberlo observado estamos haciendo el ciclo deducción-inducción, que se mencionaba en el
+                Tema 1, y que es la base del aprendizaje a través de la observación. A partir del modelo
+                Binomial B(200, 0,005) deducimos la probabilidad de encontrar muestras con un determinado
+                número de artículos defectuosos. Posteriormente, observamos la realidad y la comparamos con lo
+                que nos decía el modelo. Si discrepa mucho, inducimos o inferimos que el modelo que explica
+                la realidad ha debido cambiar. En nuestro ejemplo, que la máquina tiene una mayor propensión a
+                fabricar artículos defectuosos.<br><br>
+                Claro está, que al trabajar de esta forma corremos el riesgo de equivocarnos. Obsérvese que
+                al comparar lo observado con su probabilidad no podemos concluir que el modelo sea incorrecto,
+                sino que lo observado es muy poco probable de acuerdo al modelo. Pudiera ser que el modelo
+                fuese correcto y que, por casualidad (azar), hayamos observado una muestra con muchos artículos
+                defectuosos. Según los valores del Ejemplo 1, si la máquina M funciona correctamente, en 4 de cada
+                1000 muestras de tamaño n = 200 habrá más de 4 artículos defectuosos. Por tanto, si decidimos
+                que el modelo ya no es válido y damos la alarma en el proceso productivo,</p><br>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Variables aleatorias univariantes continuas</h1>
+            <!-- <h2 class="date">Publicado hoy</h2> -->
+            <!-- <img src="https://conceptoabc.com/wp-content/uploads/2022/04/Diseno-sin-titulo-7.jpg" alt="blog"> -->
+            <p class="blog-content" id="contenido3"><br><br>Dos aplicaciones principales de la teoría de la probabilidad en el día a día son en el análisis de riesgo y en el comercio de los mercados de materias primas. Los gobiernos normalmente aplican métodos probabilísticos en regulación ambiental donde se les llama "análisis de vías de dispersión o separación por medio de ecuaciones", y a menudo miden el bienestar usando métodos que son estocásticos por naturaleza, y escogen qué proyectos emprender basándose en análisis estadísticos de su probable efecto en la población como un conjunto. No es correcto decir que la estadística está incluida en el propio modelado, ya que típicamente los análisis de riesgo son para una única vez y por lo tanto requieren más modelos de probabilidad fundamentales, por ej. "la probabilidad de otro 11-S". Una ley de números pequeños tiende a aplicarse a todas aquellas elecciones y percepciones del efecto de estas elecciones, lo que hace de las medidas probabilísticas un tema político. Un buen ejemplo es el efecto de la probabilidad percibida de cualquier conflicto generalizado sobre los precios del petróleo en Oriente Medio - que producen un efecto dominó en la economía en conjunto. Un cálculo por un mercado de materias primas en que la guerra es más probable en contra de menos probable probablemente envía los precios hacia arriba o hacia abajo e indica a otros comerciantes esa opinión. Por consiguiente, la probabilidad no se calcula independientemente y tampoco es necesariamente muy racional. La teoría de las finanzas conductuales surgió para describir el efecto de este pensamiento de grupo en el precio, en la política, y en la paz y en los conflictos.<br>
+
+                <br> Se puede decir razonablemente que el descubrimiento de métodos rigurosos para calcular y combinar los cálculos de probabilidad ha tenido un profundo efecto en la sociedad moderna. Por consiguiente, puede ser de alguna importancia para la mayoría de los ciudadanos entender cómo se calculan los pronósticos y la probabilidad, y cómo contribuyen a la reputación y a las decisiones, especialmente en una democracia.<br>
+                
+                Otra aplicación significativa de la teoría de la probabilidad en el día a día es en la fiabilidad. Muchos bienes de consumo, como los automóviles y la electrónica de consumo, utilizan la teoría de la fiabilidad en el diseño del producto para reducir la probabilidad de avería. La probabilidad de avería también está estrechamente relacionada con la garantía del producto.<br>
+                
+                Se puede decir que no existe una cosa llamada probabilidad. También se puede decir que la probabilidad es la medida de nuestro grado de incertidumbre, o esto es, el grado de nuestra ignorancia dada una situación. Por consiguiente, puede haber una probabilidad de 1 entre 52 de que la primera carta en un baraja sea la J de diamantes. Sin embargo, si uno mira la primera carta y la reemplaza, entonces la probabilidad es o bien 100% o 0%, y la elección correcta puede ser hecha con precisión por el que ve la carta. La física moderna proporciona ejemplos importantes de situaciones deterministas donde solo la descripción probabilística es factible debido a información incompleta y la complejidad de un sistema así como ejemplos de fenómenos realmente aleatorios.<br>
+                
+                En un universo determinista, basado en los conceptos newtonianos, no hay probabilidad si se conocen todas las condiciones. En el caso de una ruleta, si la fuerza de la mano y el periodo de esta fuerza es conocido, entonces el número donde la bola parará será seguro. Naturalmente, esto también supone el conocimiento de la inercia y la fricción de la ruleta, el peso, lisura y redondez de la bola, las variaciones en la velocidad de la mano durante el movimiento y así sucesivamente. Una descripción probabilística puede entonces ser más práctica que la mecánica newtoniana para analizar el modelo de las salidas de lanzamientos repetidos de la ruleta. Los físicos se encuentran con la misma situación en la teoría cinética de los gases, donde el sistema determinístico en principio, es tan complejo (con el número de moléculas típicamente del orden de magnitud de la constante de Avogadro {\displaystyle 6\cdot 10^{23}}6\cdot 10^{23}) que solo la descripción estadística de sus propiedades es viable.<br><br>
+                
+                La mecánica cuántica, debido al principio de indeterminación de Heisenberg, solo puede ser descrita actualmente a través de distribuciones de probabilidad, lo que le da una gran importancia a las descripciones probabilísticas. Algunos científicos hablan de la expulsión del paraíso.[cita requerida] Otros no se conforman con la pérdida del determinismo. Albert Einstein comentó estupendamente en una carta a Max Born: Jedenfalls bin ich überzeugt, daß der Alte nicht würfelt. (Estoy convencido de que Dios no tira el dado). No obstante hoy en día no existe un medio mejor para describir la física cuántica si no es a través de la teoría de la probabilidad. Mucha gente hoy en día confunde el hecho de que la mecánica cuántica se describe a través de distribuciones de probabilidad con la suposición de que es por ello un proceso aleatorio, cuando la mecánica cuántica es probabilística no por el hecho de que siga procesos aleatorios sino por el hecho de no poder determinar con precisión sus parámetros fundamentales, lo que imposibilita la creación de un sistema de ecuaciones determinista.</p>
+          </div>
+        </div>
+
+
+        <div class="post-list">
+          <div class="content">
+              <!-- go! -->
+            <!-- contenido multimedia -->
+        <div class="modal fade " id="exampleModalScrollable1" tabindex="-4" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle"><stron>UNIDAD CENTRAL DE PROCESO</stron></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="../estad/guias/Apuntes_Modelos.pdf" width="760" height="500" allow="autoplay"></iframe>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+          </div>
+          </div>
+          </div>
+  
+      <article class="post">
+          <div class="post-header">
+              <div class="post-img-1"></div>
+          </div>
+           <div class="post-body">
+              <!-- <span>5 septiembre,2022|Diseño web</span> -->
+              <h2>GUIAS</h2>
+              
+              <p class="descripcion">teoria y ejercicios de apoyo para el desarrollo del curso y su complementacion</p>    
+           </div>
+           
+           
+           <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable1">VER
+              </button>
+      </article>
+
+            <!-- end -->
+             <!-- contenido multimedia -->
+    <div class="modal fade " id="exampleModalvideos" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalScrollableTitle">VIDEOS</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <!-- 760-----500 -->
+        <iframe width="760" height="500" src="https://www.youtube.com/embed/yLbifCiSosc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+  <article class="post">
+      <div class="post-header">
+          <div class="post-img-2"></div>
+      </div>
+       <div class="post-body">
+          <!-- <span>5 septiembre,2022|Diseño web</span> -->
+          <h2>VIDEOS</h2>
+          <p class="descripcion" id="multimedia">cursos en formato de video para el reforzamiento al desarrollo del curso</p>  
+       </div>
+       <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalvideos">VER</button>
+  </article>
+  <!-- end -->
+               <!-- contenido multimedia -->
+               <div class="modal fade " id="exampleModallibro" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">LIBROS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                   
+                    <ul>Fundamentos de la probabilidad - Javier M.</ul>
+                    <ul>Probabilidad - Gabriel Velasco</ul>
+                    <ul>Probabilidad y Estadistica -Jay L. Devo</ul>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-img-3"></div>
+                </div>
+                 <div class="post-body">
+                    <!-- <span>5 septiembre,2022|Diseño web</span> -->
+                    <h2>BIBLIOGRAFIA</h2>
+                    <p class="descripcion" id="multimedia">libros para ayudar a saber más sobre el tema y complementar el aprendizaje</p>  
+                 </div>
+                 <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModallibro">VER</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    <!--contenido derecho-->
+      <aside class="col-span_1_of_3">
+        <div class="side-post">
+          <h3>BUSCANOS</h3>
+          <div class="iconos">
+            <ul>
+                <li class="sf">
+                  <a href="#" class="fa fa-facebook">
+                              </a>
+                </li>
+                <li class="stw">
+                  <a href="#" class="fa fa-twitter">
+                              </a>
+                </li>
+                <li class="sy">
+                  <a href="#"class="fa fa-linkedin">
+                  </a>
+                </li>
+                <li class="sw">
+                  <a href="#"class="fa fa-whatsapp">
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="lista">
+            <br>
+            <p>Categorías</p>		
+            <ul>
+              <li><a href="#contenido1">Tema 1</a>
+              </li>
+              <li><a href="#contenido2">Tema 2</a>
+              </li>
+              <li><a href="#contenido3">Tema 3</a>
+              </li>
+              <li><a href="#multimedia">Multimedia</a>
+              </li>
+              <li class="space">space</li>
+              <li class="space"> space</li>
+            </ul>    
+        </div>
+      </aside>
+    </div>
+  <!--pie de pagina-->
+    <footer class="pie_pagina">
+        <div class="grupo1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/305913447_1262687094484677_3040201740093793565_n.jpg?ccb=11-4&oh=01_AVy-Yld2KK3ichhzmrcZ9VDiJ8BZN3lhE9kz9V4uHCyESg&oe=63521281" alt="sexto semestre completo ">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2> SOBRE NOSOTROS</h2>
+            <p>Somos parte de la facultad de Ingeniera Estadistica e informatica del sexto semestre</p>
+          </div>
+          <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redes">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo2">
+          <small>&copy;2022 <b>Jeobardo Jerif Cornejo Cuno,Edson David Mamani Alave,Caren Lizbeth Quisa Mamani </b> -Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+<script src="../jv/bootstrap.bundle.min.js"></script>
+<script src="../jv/main.js"></script>
+
+</body>
+</html>

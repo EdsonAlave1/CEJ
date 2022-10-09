@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo.jpg ">
+    <link rel="stylesheet" href="../../css/contenidos.css">
+    <link rel="stylesheet" href="../../css/css2.0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    
+    <script src="https://kit.fontawesome.com/e6bc2520f1.js" crossorigin="anonymous"></script>
+    <title>CEJ-FINESI</title>
+</head>
+<body>
+  <!--header-->
+    <header>
+      <div class="encabezado">
+        <div class="contacto">
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Llámanos :</a></li>
+                    <li class="en"><a href="#">+51987563251</a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                  <li><a>Contáctanos :</a></li>
+                  <li class="ecom"><a href="#">ellanotequiere@hotmail.com </a></li>
+                  </ul>
+                </div>
+                <div class="encabezado_1">
+                  <ul>
+                    <li><a>Encuéntranos :</a></li>
+                   <li class="ef"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="ei"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="et"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="ey"> <a href="#" class="fa fa-youtube"></a></li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+    </header>
+  <!--menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6610f2;">
+    <div class="container-fluid">
+       <a href="../../index.html" class="logo_inicial"><img src="../../img/logo.jpg" alt="logo" class="navbar-brand" width="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../sobre.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle nav-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../infor.html">Cursos de informatica</a></li>
+              <li><a class="dropdown-item" href="../estad.html">Cursos de estadistica</a></li>
+              <li><a class="dropdown-item" href="../compl.html">Cursos complementarios</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!--contenido-->
+    <div class="container">
+      <div class="indice">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a>></a></li>
+          <li><a href="../estad.html">Estadistica </a></li>
+          <li><a>></a></li>
+          <li><a href="../estad/univar.html">pobl.norma</a></li>  
+          <!--  -->
+      </ul>
+      </div>
+      <div class="section">
+        <div class="col span_2_of_3">
+          <div class="blog-post">
+            <h1 class="blog-title">	INFERENCIA EN UNA POBLACION NORMAL</h1>
+            <h2 class="date"> Introducción<br></h2>
+            <img src="https://bookdown.org/aquintela/EBE/Figure/procesoinferencia.png" alt="blog">
+            <p class="blog-content" id="contenido1"><br>En este tema estamos interesados en hacer inferencia sobre los parámetros de una variable
+                aleatoria normal X ∼ N(μ, σ2). Es decir, sobre su media μ y sobre su varianza σ2. En el tema anterior se introdujeron los elementos para realizar inferencia para la media μ de una población cualquiera
+                en muestras grandes. El principio fundamental era que para una muestra X1, X2, ..., Xn de una
+                variable aleatoria X, la media muestral<br><br>
+            
+                La justificación de este resultado se encuentra en la aplicación del teorema central del límite.
+                En la práctica, tamaños muestrales en torno a 30 obervaciones pueden ser suficientes para que
+                podamos realizar intervalos de confianza y contrastes sobre μ basados en la media muestral y
+                su aproximación a la normal. Cuando el tamaño muestral es pequeño, el teorema central del
+                límite ya no se cumple, y la distribución de la variable aleatoria X¯ en el muestreo depende de la
+                distribución de la variable X que estamos analizando. En estos casos, los intervalos de confianza
+                que construyamos siguiendo la formulación del tema anterior ya no tendrán el nivel de confianza
+                que deseamos, ni los contrastes tendrán el nivel de significación o el p-valor que nos salga en los
+                cálculos, al estar basados en propiedades estadísticas que ya no se cumplen.<br><br>
+                En este tema nos ocuparemos de la inferencia cuando la variable de interés X es normal, y que
+                será de especial interés en muestras pequeñas. Como ya se ha mencionado en temas anteriores,
+                las variables aleatorias normales verifican que su combinación lineal produce variables
+                aleatorias normales, para cualquier número de variables que combinemos. De esta forma
+                tenemos que, para cualquier tamaño muestral grande o pequeño, si X ∼ N(μ, σ2),</p><br>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Inferencia en muestras pequeñas</h1>
+            <h2 class="date"></h2>
+            <img src="https://i.ytimg.com/vi/SJL3wLC62EM/maxresdefault.jpg" alt="blog">
+            <p class="blog-content" id="contenido2"><br><br>propiedades estadísticas sean diferentes. En Z sólo interviene una variable aleatoria, que es la
+                media muestral X. ¯ Al ser X¯ normal y estandarizarse con sus verdaderos parámetros, obtenemos
+                que Z es la normal estándar. En T hay, sin embargo, dos variables aleatorias, X¯ en el numerador
+                y Sˆ en el denominador. Se puede demostrar que con muestras grandes, el componente aleatorio
+                que aporta Sˆ en las propiedades estadísticas de T puede despreciarse. Por esta razón, en el tema
+                anterior utilizamos que, para muestras grandes<br><br>
+            
+                Para muestras pequeñas, la distribución muestral de T viene influenciada tanto
+                por X¯ como por S, ˆ por lo que la aproximación a la normal que se usa en (7.4) será
+                muy imprecisa. La distribución muestral de T cuando X es normal es conocida y
+                se denomina distribución t de Student. En la siguiente sección se describe brevemente esta
+                distribución.</p><br>
+          </div>
+          <div class="blog-post">
+            <h1 class="blog-title">Inferencia sobre μ</h1>
+            <!-- <h2 class="date">Publicado hoy</h2> -->
+            <!-- <img src="https://conceptoabc.com/wp-content/uploads/2022/04/Diseno-sin-titulo-7.jpg" alt="blog"> -->
+            <p class="blog-content" id="contenido3"><br><br>En la práctica, si los datos proceden de una normal, deberemos utilizar siempre la distribución
+                tn−1 en los intervalos. De esta forma aseguraremos que el nivel de confianza real es (1 − α). Los
+                intervalos de confianza en (7.6) son intervalos asintóticos, y en la práctica sólo podremos estar
+                seguros de que el nivel de confianza real es (1 − α) si el tamaño muestral es muy grande. Sin
+                embargo, el intervalo (7.7) está hecho a la medidad de una población normal y el tamaño muestral
+                n, y por eso siempre tienen el nivel de confianza (1 − α). Por esta razón se dice que los intervalos
+                (7.7) son exactos. Para poder aplicar (7.7) debemos asegurarnos que nuestros datos se ajustan
+                suficientemente a la normal. Para saber si los datos de la muestra proceden de una normal podemos
+                hacer un histograma de los mismos o incluso algún test de bondad de ajuste como el test de la
+                chi-cuadrado que se vio en temas anteriores.<br><br>
+                Ejemplo 1 En una explotación minera las rocas excavadas se someten a un análisis químico
+                para determinar su contenido de Cadmio (densidad). Después de analizar 25 rocas se obtiene
+                que x¯ = 9,77 y sˆ = 3,164. Se sabe de anteriores análisis que el contenido de Cadmio sigue una
+                distribución normal. Se quiere construir un intervalo de confianza al 95 % para el contenido medio
+                de Cadmio en las rocas de esa mina. El tamaño de la muestra n = 25 es muy pequeño para que los
+                intervalos asintóticos (7.6) sean válidos. Al ser la variable de interés una normal, podemos emplear
+                el intervalo exacto (7.7). El intervalo de nivel de confianza 0,95 será<br></p>
+          </div>
+        </div>
+
+
+        <div class="post-list">
+          <div class="content">
+              <!-- go! -->
+            <!-- contenido multimedia -->
+        <div class="modal fade " id="exampleModalScrollable1" tabindex="-4" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle"><stron>UNIDAD CENTRAL DE PROCESO</stron></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="../estad/guias/Apuntes_InferNormal.pdf" width="760" height="500" allow="autoplay"></iframe>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+          </div>
+          </div>
+          </div>
+  
+      <article class="post">
+          <div class="post-header">
+              <div class="post-img-1"></div>
+          </div>
+           <div class="post-body">
+              <!-- <span>5 septiembre,2022|Diseño web</span> -->
+              <h2>GUIAS</h2>
+              
+              <p class="descripcion">teoria y ejercicios de apoyo para el desarrollo del curso y su complementacion</p>    
+           </div>
+           
+           
+           <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable1">VER
+              </button>
+      </article>
+
+            <!-- end -->
+             <!-- contenido multimedia -->
+    <div class="modal fade " id="exampleModalvideos" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalScrollableTitle">VIDEOS</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <!-- 760-----500 -->
+        <iframe width="760" height="500" src="https://www.youtube.com/embed/dJPneIgbUYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+  <article class="post">
+      <div class="post-header">
+          <div class="post-img-2"></div>
+      </div>
+       <div class="post-body">
+          <!-- <span>5 septiembre,2022|Diseño web</span> -->
+          <h2>VIDEOS</h2>
+          <p class="descripcion" id="multimedia">cursos en formato de video para el reforzamiento al desarrollo del curso</p>  
+       </div>
+       <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModalvideos">VER</button>
+  </article>
+  <!-- end -->
+               <!-- contenido multimedia -->
+               <div class="modal fade " id="exampleModallibro" tabindex="-1" aria-labelledby="exampleModalScrollableTitle " style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">LIBROS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                   
+                    <ul>inferencia estadistica y analisis de datos. - santiago L. lpiña</ul>
+                    <ul>Estadistica y matematica - Rafael Cabrera</ul>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-img-3"></div>
+                </div>
+                 <div class="post-body">
+                    <!-- <span>5 septiembre,2022|Diseño web</span> -->
+                    <h2>BIBLIOGRAFIA</h2>
+                    <p class="descripcion" id="multimedia">libros para ayudar a saber más sobre el tema y complementar el aprendizaje</p>  
+                 </div>
+                 <button type="button" class="btn btn-primary " id="pdf" data-bs-toggle="modal" data-bs-target="#exampleModallibro">VER</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    <!--contenido derecho-->
+      <aside class="col-span_1_of_3">
+        <div class="side-post">
+          <h3>BUSCANOS</h3>
+          <div class="iconos">
+            <ul>
+                <li class="sf">
+                  <a href="#" class="fa fa-facebook">
+                              </a>
+                </li>
+                <li class="stw">
+                  <a href="#" class="fa fa-twitter">
+                              </a>
+                </li>
+                <li class="sy">
+                  <a href="#"class="fa fa-linkedin">
+                  </a>
+                </li>
+                <li class="sw">
+                  <a href="#"class="fa fa-whatsapp">
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="lista">
+            <br>
+            <p>Categorías</p>		
+            <ul>
+              <li><a href="#contenido1">Tema 1</a>
+              </li>
+              <li><a href="#contenido2">Tema 2</a>
+              </li>
+              <li><a href="#contenido3">Tema 3</a>
+              </li>
+              <li><a href="#multimedia">Multimedia</a>
+              </li>
+              <li class="space">space</li>
+              <li class="space"> space</li>
+            </ul>    
+        </div>
+      </aside>
+    </div>
+  <!--pie de pagina-->
+    <footer class="pie_pagina">
+        <div class="grupo1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/305913447_1262687094484677_3040201740093793565_n.jpg?ccb=11-4&oh=01_AVy-Yld2KK3ichhzmrcZ9VDiJ8BZN3lhE9kz9V4uHCyESg&oe=63521281" alt="sexto semestre completo ">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2> SOBRE NOSOTROS</h2>
+            <p>Somos parte de la facultad de Ingeniera Estadistica e informatica del sexto semestre</p>
+          </div>
+          <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redes">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo2">
+          <small>&copy;2022 <b>Jeobardo Jerif Cornejo Cuno,Edson David Mamani Alave,Caren Lizbeth Quisa Mamani </b> -Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+<script src="../jv/bootstrap.bundle.min.js"></script>
+<script src="../jv/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+/*tres columnas*/
+
+body{
+    font-family: sans-serif;
+}
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px ;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.post-img-1{
+    background : url(https://previews.123rf.com/images/yupiramos/yupiramos1706/yupiramos170600933/79355791-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-aislado-del-vector-del-icono-de-la-libreta.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-2{
+    background : url(https://i.pinimg.com/564x/c1/c6/cf/c1c6cf94610fb84d6fe99892af3e1abe.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-3{
+    background : url(http://images.gofreedownload.net/2/purple-book-icon-5469.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0,0,0, .1) ;
+    overflow: hidden;
+    transition: .2s;
+}
+.post:hover{
+    transform:  translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0,0,0, .15) ;
+}
+
+.post-header{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+.post-body h2{
+    margin-bottom: 15px;
+}
+.post-bodyp{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display:  block;
+    padding: 10px;
+    background-color: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0, .1);
+    transition: .2s;
+}
+.post-body .post-link:hover{
+   background-color: #3378c7;
+   box-shadow: 1px 2px 6px 1px rgba(0,0,0, .2);
+   transform: translate(-2px);
+}
+
+@media(max-width: 840px){
+    .content{
+        grid-template-columns: repeat(3,1fr) ;
+    }
+}
+@media(max-width: 600px){
+    .content{
+        grid-template-columns: repeat(1,1fr) ;
+    }
+}
+
+.nav-link{
+    font-size: 20px;
+    text-align: center;
+}
+/*pie de pagina*/
+.pie_pagina{
+    width: 100%;
+    background-color: black ;
+
+  }
+  .pie_pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 10px;
+  }
+  .pie_pagina .grupo1 .box figure{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie_pagina .grupo1 .box figure img{
+    width: 200px;
+  }
+  .pie_pagina .grupo1 .box h2{
+    color: aliceblue;
+    margin-bottom:  30px; 
+    font-size: 15px;
+
+  }
+  .pie_pagina .grupo1 .box li{
+      text-decoration: white;
+    color: aliceblue;
+    list-style-type: circle;
+    margin-bottom: 10px; 
+    font-size: 15px;
+  }
+  .pie_pagina .grupo1 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie_pagina .grupo1 .redes :hover{
+    color:antiquewhite
+  }
+  .pie_pagina .grupo2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+  }
+  .pie_pagina .grupo2 small{
+    font-size: 15px;
+  }
+  @media(max-width:800px) {
+    .pie_pagina .grupo1{
+      width: 90%;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+    
+  }
+  @media(max-width:600px) {
+    .pie_pagina .grupo1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+    
+  }
+
+/*table*/
+.img_curs{
+    padding-top: 10px;
+
+}
+.table_1{
+    padding-top: 10px;
+} 
+.cur{
+    font-size: 25px;
+    width: center;
+    
+}
+.cur1{
+   font-style: italic;
+    list-style-type: armenian;
+    width: 500px;
+    color: #999;
+}
+th{
+  font-size: 30px;
+}
+@media(max-width:600px) {
+  th{
+    font-size: 15px;
+  }
+}
+.titulo-est{
+    font-size:80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: #3b5998;
+}
+
+  
+/*table*/
+.img_curs{
+    width: 250px;
+
+}
+.table_1{
+    padding-top: 30px;
+} 
+.cur a{
+    
+  font-size: 25px;
+   text-align: center;
+   color: black;
+   text-decoration: none;
+   font-weight:bolder;
+}
+@media(max-width: 640px){
+    .cur a{
+    
+        font-size: 15px;
+         text-align: center;
+         color: black;
+         text-decoration: none;
+         font-weight:bolder;
+      }}
+.cur1{
+   font-style: italic;
+    list-style-type: armenian;
+    width: 500px;
+    color: #999;
+    padding: auto;
+    font-size: 17px;
+}
+@media(max-width: 640px){
+    .cur1{
+        font-size: 13px;
+        font-style: italic;
+         list-style-type: armenian;
+         width: 500px;
+         color: #999;
+         padding: auto;
+      }}
+/*botones emergentes*/
+#pdf{
+    height:50px;
+    width: 100%;
+    background-color: violet;
+    border-color: #fff;
+    font-size: 20px;
+   
+}
+/* mapas */
+.maps h2{
+    padding-left: 40px;
+   }
+   .map{
+       margin: 30 500;
+       padding: 10px 40px;
+       width: 100%;
+       height: 450px;
+   }
+/* sobre nosotros */
+.post-imagen_1{
+    background : url(https://ih1.redbubble.net/image.804253484.4447/st,small,507x507-pad,600x600,f8f8f8.u4.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .post-imagen_2{
+    background : url(https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-1/243197903_1905767926293638_2841404197796768655_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=eI3x7Fpn05YAX_SpTcA&_nc_ht=scontent.flim9-1.fna&oh=00_AT9H5RaMyRleF_6alHZZoSLmjtCDH_SLZ7gckBbefaW07A&oe=634806AB);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .post-imagen_3{
+    background : url(https://s.mxmcdn.net/images-storage/albums/7/0/6/3/6/0/32063607_350_350.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .presentacion{
+    padding: 40px 40px;
+    margin: 40px 40px;
+    display: flex;
+  }
+  .presentacion_t{
+    padding: 50px 40px ;
+  }
+  .parrafo_p h1{
+    padding-top: 40px;
+  }
+  
+  .parrafo_p P{
+    padding-top: 20px;
+  }
+  
+  .presentacin{
+    width: 400px;
+  }
+  @media(max-width:800px) {
+    .presentacion{
+      text-align: center;
+      display: block;
+      padding: 10px 10px;
+    }
+  
+  }
+  @media(max-width:640px) {
+    .presentacion{
+      display: block;
+      padding: 10px 10px;
+    }
+    .presentacion_t{
+      text-align: center;
+      padding: 30px 30px ;
+    }
+    .presentacin{
+      width: 150px;
+    }
+  
+  }
+  /*Tamaño de letra*/
+  .post-body .C{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+/* ENCABEZADO modificacion*/
+.encabezado{
+    height:50px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.contacto {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+}
+.encabezado_1 ul li{
+  display: inline-block;
+}
+.encabezado_1 a{
+    display: inline-block;
+    text-decoration: none;
+    width:auto;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+.en a:hover{
+    color:#FD1D1D;
+}
+.ecom a:hover{
+  color: #FFDC80;
+}
+.ef a:hover{
+  color: #3b5998;
+}
+.ei a:hover{
+  color: #C13584;
+}
+.et a:hover{
+  color: #00acee;
+}
+.ey a:hover{
+  color: #c4302b;
+}
+/*640px header modificacion*/
+@media(max-width: 640px){
+  .encabezado{
+    height: auto;
+    width: 100%;
+  }
+  .contacto{
+    grid-template-columns: repeat(1,1fr);  
+}}
+/*y*/
+@media(max-width: 640px){
+  .youtube{
+    width: 250px;
+
+  }
+ }
+
+
+ /*cmp*/
+ @media(max-width: 800px){
+  .titulo-est{
+    font-size: 50px;
+
+  }
+ }
+ @media(max-width: 640px){
+  .titulo-est{
+    font-size: 30px;
+
+  }
+ }
+ /**/

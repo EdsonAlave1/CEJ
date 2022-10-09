@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="../css/contenidos.css ">
+    <link rel="stylesheet" href="../css/css2.0.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script type="text/javascript">
+      (function(document) {
+        'use strict';
+  
+        var LightTableFilter = (function(Arr) {
+  
+          var _input;
+  
+          function _onInputEvent(e) {
+            _input = e.target;
+            var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function(table) {
+              Arr.forEach.call(table.tBodies, function(tbody) {
+                Arr.forEach.call(tbody.rows, _filter);
+              });
+            });
+          }
+  
+          function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+          }
+  
+          return {
+            init: function() {
+              var inputs = document.getElementsByClassName('light-table-filter');
+              Arr.forEach.call(inputs, function(input) {
+                input.oninput = _onInputEvent;
+              });
+            }
+          };
+        })(Array.prototype);
+  
+        document.addEventListener('readystatechange', function() {
+          if (document.readyState === 'complete') {
+            LightTableFilter.init();
+          }
+        });
+  
+      })(document);
+      </script>
+    <title>CEJ-FINESI</title>
+</head>
+<body>
+  <header>
+    <div class="encabezado">
+      <div class="contacto">
+              <div class="encabezado_1">
+                <ul>
+                  <li><a>Llámanos :</a></li>
+                  <li class="en"><a href="#">+51987563251</a></li>
+                </ul>
+              </div>
+              <div class="encabezado_1">
+                <ul>
+                <li><a>Contáctanos :</a></li>
+                <li class="ecom"><a href="#">ellanotequiere@hotmail.com </a></li>
+                </ul>
+              </div>
+              <div class="encabezado_1">
+                <ul>
+                  <li><a>Encuéntranos :</a></li>
+                 <li class="ef"><a href="#" class="fa fa-facebook"></a></li>
+                  <li class="ei"><a href="#" class="fa fa-instagram"></a></li>
+                  <li class="et"><a href="#" class="fa fa-twitter"></a></li>
+                  <li class="ey"> <a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+              </div>
+      </div>
+    </div>
+  </header>
+<!--menu-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6610f2;">
+  <div class="container-fluid">
+     <a href="../index.html" class="logo_inicial"><img src="../img/logo.jpg" alt="logo" class="navbar-brand" width="50px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="../../CEJ/sobre.html">Sobre nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle nav-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../categorias/infor.html">Cursos de informatica</a></li>
+            <li><a class="dropdown-item" href="../categorias/estad.html">Cursos de estadistica</a></li>
+            <li><a class="dropdown-item" href="../categorias/compl.html">Cursos complementarios</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 light-table-filter" data-table="order-table" type="text" placeholder="Buscar">
+      </form>
+    </div>
+  </div>
+</nav><br>  
+  <h1 class="titulo-est"> INFORMATICA</h1>
+    <br>
+    <div class="bd-example">
+    <table class="table  table-bordered order-table table-striped " id="listaArticulos" >
+        <thead class="tble-dark" style="background-color:#6610f280;">
+          <tr>
+            <th scope="col-light">#</th>
+            <th scope="col"></th>
+            <th scope="col">TITULO</th>
+            <th scope="col">CONTENIDO</th>
+          </tr>
+        </thead>
+        <tbody class="cursos-list">
+          <tr   style="background-color:#6610f210;">
+            <th scope="row" class="table_1">1</th>
+            <td class="table_"><img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584.jpg" class="img_curs"></td>
+            <td class="cur">  <a href="infor/UCDP.html">LA UNIDAD CENTRAL DE PROCESO</a></td>
+            <td class="cur1">
+              <ol>Sistemas de numeración y codificación. Unidades y magnitudes
+                informáticas. </ol>
+              <ol>Arquitectura de un sistema microinformático. Principios funcionales.</ol>
+              <ol>Análisis de bloques funcionales sobre arquitecturas vigentes.
+              </ol></td>
+          </tr>
+          <tr >
+            <th scope="row" class="table_1">2</th>
+            <td class="table_"><img src="https://www.aboutespanol.com/thmb/CKURh0MDwgyIbw6pNeqEMk2W5lU=/960x640/filters:fill(auto,1)/Que-Es-Sistema-Operativo-569cb26a5f9b58eba4aae8ae.png" class="img_curs"></td>
+            <td class="cur" ><a href="infor/SISTEM.html">SISTEMAS OPERATIVOS</a></td>
+            <td class="cur1">
+              <ol>Funciones. Clasificación. Estructura y componentes. </ol>
+              <ol>Instalación y configuración. Controladores de dispositivos. Sistemas de
+                archivos. </ol>
+              <ol>Interfaces de usuario. Intérpretes de comandos.</ol></td></td>
+          </tr>
+          <tr style="background-color:#6610f210;">
+            <th scope="row" class="table_1">3</th>
+            <td class="table_"><img src="data:image/png;base64,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" class="img_curs"></td>
+            <td class="cur"><a href="infor/bbdd.html">BASES DE DATOS</a></td>
+            <td class="cur1">
+              <ul>Modelos conceptuales, lógicos y físicos. Modelo Entidad-Relación.
+                Elementos del modelo. </ul>
+              <ul>Clasificación. Arquitectura y modelos. Transacciones y sistemas
+                transaccionales. </ul>
+              <ul>Instalación y configuración Componentes Gestión del almacenamiento.
+                Administración de usuarios.</ul>
+          </tr>
+          <tr >
+            <th scope="row" class="table_1">4</th>
+            <td class="table_"><img src="https://blog.educacionit.com/wp-content/uploads/2018/09/shutterstock-10338536170938-620x354-01.jpg" class="img_curs"></td>
+            <td class="cur"><a href="infor/lenguaj.html">LENGUAJES DE PROGRAMACIÓN</a></td>
+            <td class="cur1">
+              <ul>Características y clasificación. Entornos de programación. </ul>
+              <ul>Compiladores e intérpretes. Preprocesadores. Enlazado. Librerías. </ul>
+              <ul>Máquinas virtuales y lenguajes intermedios. Compilación en tiempo de
+                ejecución. Liberación automática de memoria. Código gestionado.</ul>
+          </tr>
+          <tr style="background-color:#6610f210;">
+            <th scope="row" class="table_1">5</th>
+            <td class="table_"><img src="https://sites.google.com/site/programacionmodularbycentecon/_/rsrc/1476376508823/home/programacion-estructurada/peb3.jpg" class="img_curs"></td>
+            <td class="cur"><a href="../categorias/infor/estruct.html">ESTRUCTURAS DE PROGRAMACIÓN</a></td>
+            <td class="cur1">
+              <ul>Tipos de datos y variables. Expresiones y operadores. </ul>
+              <ul>Estructuras de control de flujo. Subrutinas y funciones. </ul>
+              <ul>Paso de parámetros. Programación basada en eventos.</ul>
+          </tr>
+          <tr >
+            <th scope="row" class="table_1">6</th>
+            <td class="table_"><img src="https://univia.info/wp-content/uploads/2021/05/1.jpg" class="img_curs"></td>
+            <td class="cur"><a href="../categorias/infor/operacestr.html">OPERACIONES CON ESTRUCTURAS DE ALMACENAMIENTO</a></td>
+            <td class="cur1">
+              <ul>Arrays. Listas. Pilas y colas</ul>
+              <ul>Árboles. Tablas hash Grafos </ul>
+          </tr>
+          <tr style="background-color:#6610f210;">
+            <th scope="row" class="table_1">7</th>
+            <td class="table_"><img src="https://pandorafms.com/blog/wp-content/uploads/2018/05/que-es-un-algoritmo-featured.png" class="img_curs"></td>
+            <td class="cur"><a href="../categorias/infor/algorit.html">ALGORITMOS</a></td>
+            <td class="cur1">
+              <ul>Técnicas descriptivas y representación Diseño de algoritmos</ul>
+              <ul>Recursividad Algoritmos de ordenación Algoritmos de búsqueda.</ul>
+          </tr>
+          <tr>
+          
+        </tbody>
+    </table>  </div>
+    <script src="https://kit.fontawesome.com/e6bc2520f1.js" crossorigin="anonymous"></script>
+    <script src="../jv/bootstrap.bundle.min.js"></script>
+    <script src="../jv/main.js"></script>
+</body>
+</html>
